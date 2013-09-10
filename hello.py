@@ -1,3 +1,7 @@
 #!/usr/bin/env python
 
-print "Hello world!";
+def hello(name):
+    print "Hello " + name + "!"
+    return
+
+hello("world")
