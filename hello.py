@@ -8,5 +8,8 @@ def bye(name):
     print "Bye " + name + "!"
     return
 
-hello("world")
-bye("world")
+fh = open("namelist.txt", "r")
+
+for name in  fh.readlines():
+    hello(name.strip())
+    bye(name.strip())
